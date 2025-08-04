@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
+
+import ExportPDFButton from "./components/ExportPDFButton";
 import "./App.css";
 
 // Icono personalizado para los marcadores
@@ -393,6 +395,9 @@ export default function App() {
             <h3>Tiempo Promedio de Reparación</h3>
             <p>{airportData.tiempoPromedio}</p>
           </div>
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
+          <ExportPDFButton airportData={airportData} />
         </div>
 
         <h2 className="map-title">Mapa de Fallas en {airportData.nombre}</h2>
