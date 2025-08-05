@@ -26,6 +26,7 @@ const aeropuertos = {
         lon: -58.537,
         fecha: "2025-07-31T10:15:00Z",
         descripcion: "Fisura de 2 metros a lo largo de la pista principal.",
+        prioridad: "1 - Crítica"
       },
       {
         tipo: "Bache superficial",
@@ -33,6 +34,7 @@ const aeropuertos = {
         lon: -58.535,
         fecha: "2025-07-30T14:00:00Z",
         descripcion: "Desgaste en la intersección de rodaje con pista secundaria.",
+        prioridad: "3 - Media"
       },
       {
         tipo: "Objeto suelto",
@@ -40,6 +42,7 @@ const aeropuertos = {
         lon: -58.5385,
         fecha: "2025-07-29T08:45:00Z",
         descripcion: "Objeto metálico detectado en cabecera 11.",
+        prioridad: "2 - Alta"
       },
     ],
     gravedad: "Media",
@@ -56,6 +59,7 @@ const aeropuertos = {
         lon: -58.416,
         fecha: "2025-07-29T09:00:00Z",
         descripcion: "Grieta cerca del umbral de pista.",
+        prioridad: "1 - Crítica"
       },
       {
         tipo: "Desprendimiento de pavimento",
@@ -63,6 +67,7 @@ const aeropuertos = {
         lon: -58.414,
         fecha: "2025-07-28T13:00:00Z",
         descripcion: "Desprendimiento de superficie en zona de rodaje.",
+        prioridad: "2 - Alta"
       },
     ],
     gravedad: "Alta",
@@ -79,6 +84,7 @@ const aeropuertos = {
         lon: -64.2065,
         fecha: "2025-07-30T16:20:00Z",
         descripcion: "Hundimiento detectado por inspección visual.",
+        prioridad: "4 - Baja"
       },
     ],
     gravedad: "Baja",
@@ -414,6 +420,7 @@ export default function App() {
                   <div>
                     <p><strong>Tipo:</strong> {falla.tipo}</p>
                     <p><strong>Fecha:</strong> {new Date(falla.fecha).toLocaleString()}</p>
+                    <p><strong>Prioridad:</strong> {falla.prioridad}</p>
                     <p><strong>Descripción:</strong> {falla.descripcion}</p>
                   </div>
                 </Popup>
