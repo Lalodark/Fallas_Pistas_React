@@ -2,11 +2,11 @@ body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f5f7fa;
-  color: #1a237e;
+  color: #1b7b84;
 }
 
 header {
-  background-color: #1a237e;
+  background-color: #1b7b84;
   color: white;
   padding: 2rem 1rem;
   text-align: center;
@@ -42,7 +42,7 @@ select {
   border-radius: 8px;
   border: 1px solid #ccc;
   background-color: #fff;
-  color: #1a237e;
+  color: #082124;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
@@ -80,7 +80,7 @@ select {
   margin: 0;
   font-size: 1.8rem;
   font-weight: bold;
-  color: #1a237e;
+  color: #1b7b84;
 }
 
 /* --- Mapa --- */
